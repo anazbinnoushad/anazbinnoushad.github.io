@@ -6,8 +6,10 @@ import Title from './components/Title/Title';
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <Title />
+      <div className='title'>
+        <NavBar />
+        <Title />
+      </div>
       <About />
     </div>
   );
