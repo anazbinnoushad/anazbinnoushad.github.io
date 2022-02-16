@@ -1,6 +1,7 @@
 import './App.css';
 import About from './components/About/About';
 import NavBar from './components/NavBar/NavBar';
+import Skills from './components/Skills/Skills';
 import Title from './components/Title/Title';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <Title />
       </div>
       <About />
+      <Skills />
     </div>
   );
 }
