@@ -24,6 +24,15 @@ function Skills() {
             <p className='skill_name'>React</p>
             <FontAwesomeIcon icon={ faReact } className="icon"/>
         </div>
+        <div className="firebase_title">
+            <p className='skill_name'>Firebase</p>
+        </div>
+        <div className="material_ui">
+            <p className='skill_name'>Material-UI</p>
+        </div>
+        <div className="styled">
+            <p className='skill_name'>styled-components</p>
+        </div>
     </div>
 
   )
