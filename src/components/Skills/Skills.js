@@ -31,7 +31,7 @@ function Skills() {
             <p className='skill_name'>Material-UI</p>
         </div>
         <div className="styled">
-            <p className='skill_name'>styled-components</p>
+            <p className='skill_name'>tailwindcss</p>
         </div>
     </div>
 
