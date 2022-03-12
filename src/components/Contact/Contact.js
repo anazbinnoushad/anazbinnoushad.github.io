@@ -7,7 +7,7 @@ import './Contact.css'
 function Contact() {
   return (
     <div className='contact' id='contact'>
-        <h1 className='contact_title'>Contact</h1>
+        <h1 className='contact_title'>CONTACT</h1>
         <div class="github">
             <a href="https://github.com/anazbinnoushad">
                 <FontAwesomeIcon icon={ faGithub } className="contact_icon" />
