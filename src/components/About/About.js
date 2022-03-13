@@ -10,7 +10,6 @@ function About() {
   useEffect(()=>{
     gsap.fromTo(aboutRef.current,{ x : 0 } ,{ x : 500 , scrollTrigger  :{
       trigger : aboutRef.current,
-      markers  : true,
       start : "-150%",
       end : "100%",
       scrub : 1
