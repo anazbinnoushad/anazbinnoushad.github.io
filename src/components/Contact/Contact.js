@@ -1,13 +1,27 @@
 import { faGithub, faLinkedin , faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import React from 'react'
+import React , { useRef , useEffect}from 'react'
 import './Contact.css'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/all'
+gsap.registerPlugin(ScrollTrigger)
+
 
 function Contact() {
+    const contactRef = useRef()
+    useEffect(()=>{
+        gsap.fromTo(contactRef.current,{x : -400},{ x : 0 , scrollTrigger : {
+            trigger : contactRef.current,
+            start: "-220%",
+            end: "-100%",
+            scrub: 1,
+            
+        }})
+    },[])
   return (
     <div className='contact' id='contact'>
-        <h1 className='contact_title'>CONTACT</h1>
+        <h1 className='contact_title' ref={contactRef}>CONTACT</h1>
         <div class="github">
             <a href="https://github.com/anazbinnoushad">
                 <FontAwesomeIcon icon={ faGithub } className="contact_icon" />

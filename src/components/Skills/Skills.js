@@ -15,9 +15,8 @@ function Skills() {
         gsap.fromTo(skillRef.current, { x: 0 }, {
             x: -500, scrollTrigger: {
                 trigger: skillRef.current,
-                start: "-200%",
+                start: "-250%",
                 end: "100%",
-                markers : true,
                 scrub: 1
             }
         })
