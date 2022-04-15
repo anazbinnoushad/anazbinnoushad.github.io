@@ -18,11 +18,19 @@ function Contact() {
             scrub: 1,
             
         }})
+        if(window.innerWidth < 700){
+            gsap.fromTo(contactRef.current,{x : -400},{ x : 0 , scrollTrigger : {
+                trigger : contactRef.current,
+                start: "-520%",
+                end: "-400%",
+                scrub: 1,
+            }})
+        }
     },[])
   return (
     <div className='contact' id='contact'>
         <h1 className='contact_title' ref={contactRef}>CONTACT</h1>
-        <div class="github">
+        <div className="github">
             <a href="https://github.com/anazbinnoushad">
                 <FontAwesomeIcon icon={ faGithub } className="contact_icon" />
             </a>
@@ -32,12 +40,12 @@ function Contact() {
                 <FontAwesomeIcon icon={faEnvelope} className="contact_icon"/>
             </a>
         </div>
-        <div class="linkedin">
+        <div className="linkedin">
             <a href="https://www.linkedin.com/in/anaz-n-4560011bb/">
                 <FontAwesomeIcon icon={ faLinkedin } className="contact_icon"/>
             </a>
         </div>
-        <div class="instagram">
+        <div className="instagram">
           <a href="https://www.instagram.com/anaz_bin_noushad/">
               <FontAwesomeIcon icon={ faInstagram } className="contact_icon"/>
           </a>

@@ -20,6 +20,16 @@ function Skills() {
                 scrub: 1
             }
         })
+        if(window.innerWidth < 700){
+            gsap.fromTo(skillRef.current, { x: 0 }, {x: -100, scrollTrigger: {
+                    trigger: skillRef.current,
+                    start: "-250%",
+                    end: "100%",
+                    scrub: 1
+                }
+            })
+        }
+        
     }, [])
     return (
         <div className='skills'>
